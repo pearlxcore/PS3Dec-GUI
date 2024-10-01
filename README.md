@@ -15,7 +15,7 @@ Yet another GUI for PS3Dec. My personal tool to handle PS3 iso decryption. Suppo
 
 # Requirement
 
-  - .NET 8.0 Runtime https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+  - [.NET 8.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 # Credit
 
