@@ -1,6 +1,6 @@
 # PS3Dec GUI
 
-Yet another GUI for PS3Dec. My personal tool to handle PS3 iso decryption. Support single and multiple file operation and iso extraction. The app will decrypt if DKEY and PS3 iso filename matched.
+Yet another GUI for PS3Dec. My personal tool to handle PS3 iso decryption. Support single and multiple file operation and iso extraction. The app will only start decryption if DKEY and PS3 iso filename matched.
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R524N7X)  
 
