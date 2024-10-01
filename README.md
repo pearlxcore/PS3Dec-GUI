@@ -1,11 +1,6 @@
 # PS3Dec GUI
 
-Yet another GUI for PS3Dec. My personal tool to handle PS3 ISO decryption. Support single and multiple file operation. 
-
-# Note 
-
-  - The app will decrypt if DKEY and PS3 iso filename matched
-  - Support PS3 exraction
+Yet another GUI for PS3Dec. My personal tool to handle PS3 ISO decryption. Support single and multiple file operation and iso extraction. The app will decrypt if DKEY and PS3 iso filename matched.
 
 # How to use
 
@@ -16,4 +11,6 @@ Yet another GUI for PS3Dec. My personal tool to handle PS3 ISO decryption. Suppo
 
 # Requirement
 
-  - .NET 8 Runtime https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+  - .NET 8.0 Runtime https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+
+# 
