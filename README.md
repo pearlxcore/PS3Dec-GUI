@@ -14,3 +14,6 @@ Yet another GUI for PS3Dec. My personal tool to handle PS3 ISO decryption. Suppo
   - For multiple file operation, drag and drop DKEY and PS3 iso folder to input box respectively
   - Specify decrypted iso directory
 
+# Requirement
+
+  - .NET 8 Runtime https://dotnet.microsoft.com/en-us/download/dotnet/8.0
