@@ -19,5 +19,5 @@ Yet another GUI for PS3Dec. My personal tool to handle PS3 iso decryption. Suppo
 
 # Credit
 
-  - [al3xtjames](https://www.github.com/PS3Dec)
+  - [al3xtjames](https://www.github.com/al3xtjames)
   - [bucanero](https://www.github.com/bucanero)
