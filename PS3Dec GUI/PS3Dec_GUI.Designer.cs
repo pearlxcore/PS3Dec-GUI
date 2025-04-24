@@ -38,6 +38,7 @@ partial class PS3Dec_GUI
         label3 = new Label();
         cbDeleteEncryptedPs3IsoAfterDecrypt = new CheckBox();
         gbPs3IsoExtract = new GroupBox();
+        cbDeletePs3UpdateFolder = new CheckBox();
         cbDeleteDecryptedIsoAfterExtract = new CheckBox();
         label4 = new Label();
         tbExtractLocation = new TextBox();
@@ -113,7 +114,7 @@ partial class PS3Dec_GUI
         // 
         // btnDecryptedPs3IsoDirectory
         // 
-        btnDecryptedPs3IsoDirectory.Location = new Point(411, 296);
+        btnDecryptedPs3IsoDirectory.Location = new Point(411, 294);
         btnDecryptedPs3IsoDirectory.Name = "btnDecryptedPs3IsoDirectory";
         btnDecryptedPs3IsoDirectory.Size = new Size(42, 23);
         btnDecryptedPs3IsoDirectory.TabIndex = 0;
@@ -123,7 +124,7 @@ partial class PS3Dec_GUI
         // 
         // tbDecryptedPs3IsoDirectory
         // 
-        tbDecryptedPs3IsoDirectory.Location = new Point(206, 296);
+        tbDecryptedPs3IsoDirectory.Location = new Point(206, 294);
         tbDecryptedPs3IsoDirectory.Name = "tbDecryptedPs3IsoDirectory";
         tbDecryptedPs3IsoDirectory.ReadOnly = true;
         tbDecryptedPs3IsoDirectory.Size = new Size(199, 23);
@@ -132,7 +133,7 @@ partial class PS3Dec_GUI
         // label3
         // 
         label3.AutoSize = true;
-        label3.Location = new Point(19, 300);
+        label3.Location = new Point(19, 298);
         label3.Name = "label3";
         label3.Size = new Size(160, 15);
         label3.TabIndex = 2;
@@ -141,7 +142,7 @@ partial class PS3Dec_GUI
         // cbDeleteEncryptedPs3IsoAfterDecrypt
         // 
         cbDeleteEncryptedPs3IsoAfterDecrypt.AutoSize = true;
-        cbDeleteEncryptedPs3IsoAfterDecrypt.Location = new Point(19, 329);
+        cbDeleteEncryptedPs3IsoAfterDecrypt.Location = new Point(19, 327);
         cbDeleteEncryptedPs3IsoAfterDecrypt.Name = "cbDeleteEncryptedPs3IsoAfterDecrypt";
         cbDeleteEncryptedPs3IsoAfterDecrypt.Size = new Size(245, 19);
         cbDeleteEncryptedPs3IsoAfterDecrypt.TabIndex = 5;
@@ -150,24 +151,35 @@ partial class PS3Dec_GUI
         // 
         // gbPs3IsoExtract
         // 
+        gbPs3IsoExtract.Controls.Add(cbDeletePs3UpdateFolder);
         gbPs3IsoExtract.Controls.Add(cbDeleteDecryptedIsoAfterExtract);
         gbPs3IsoExtract.Controls.Add(label4);
         gbPs3IsoExtract.Controls.Add(tbExtractLocation);
         gbPs3IsoExtract.Controls.Add(btnExtractLocation);
         gbPs3IsoExtract.Enabled = false;
-        gbPs3IsoExtract.Location = new Point(19, 395);
+        gbPs3IsoExtract.Location = new Point(19, 393);
         gbPs3IsoExtract.Name = "gbPs3IsoExtract";
-        gbPs3IsoExtract.Size = new Size(455, 100);
+        gbPs3IsoExtract.Size = new Size(455, 124);
         gbPs3IsoExtract.TabIndex = 4;
         gbPs3IsoExtract.TabStop = false;
         gbPs3IsoExtract.Text = "PS3 Iso Extract";
         // 
+        // cbDeletePs3UpdateFolder
+        // 
+        cbDeletePs3UpdateFolder.AutoSize = true;
+        cbDeletePs3UpdateFolder.Location = new Point(21, 88);
+        cbDeletePs3UpdateFolder.Name = "cbDeletePs3UpdateFolder";
+        cbDeletePs3UpdateFolder.Size = new Size(228, 19);
+        cbDeletePs3UpdateFolder.TabIndex = 7;
+        cbDeletePs3UpdateFolder.Text = "Delete PS3_UPDATE folder after extract";
+        cbDeletePs3UpdateFolder.UseVisualStyleBackColor = true;
+        // 
         // cbDeleteDecryptedIsoAfterExtract
         // 
         cbDeleteDecryptedIsoAfterExtract.AutoSize = true;
-        cbDeleteDecryptedIsoAfterExtract.Location = new Point(21, 61);
+        cbDeleteDecryptedIsoAfterExtract.Location = new Point(21, 56);
         cbDeleteDecryptedIsoAfterExtract.Name = "cbDeleteDecryptedIsoAfterExtract";
-        cbDeleteDecryptedIsoAfterExtract.Size = new Size(224, 19);
+        cbDeleteDecryptedIsoAfterExtract.Size = new Size(223, 19);
         cbDeleteDecryptedIsoAfterExtract.TabIndex = 6;
         cbDeleteDecryptedIsoAfterExtract.Text = "Delete decrypted PS3 ISO after extract";
         cbDeleteDecryptedIsoAfterExtract.UseVisualStyleBackColor = true;
@@ -177,7 +189,7 @@ partial class PS3Dec_GUI
         label4.AutoSize = true;
         label4.Location = new Point(21, 28);
         label4.Name = "label4";
-        label4.Size = new Size(95, 15);
+        label4.Size = new Size(94, 15);
         label4.TabIndex = 5;
         label4.Text = "Extract location :";
         // 
@@ -202,9 +214,9 @@ partial class PS3Dec_GUI
         // cbExtractDecryptedIsoAfterDecryption
         // 
         cbExtractDecryptedIsoAfterDecryption.AutoSize = true;
-        cbExtractDecryptedIsoAfterDecryption.Location = new Point(19, 362);
+        cbExtractDecryptedIsoAfterDecryption.Location = new Point(19, 360);
         cbExtractDecryptedIsoAfterDecryption.Name = "cbExtractDecryptedIsoAfterDecryption";
-        cbExtractDecryptedIsoAfterDecryption.Size = new Size(248, 19);
+        cbExtractDecryptedIsoAfterDecryption.Size = new Size(247, 19);
         cbExtractDecryptedIsoAfterDecryption.TabIndex = 3;
         cbExtractDecryptedIsoAfterDecryption.Text = "Extract decrypted PS3 ISO after decryption";
         cbExtractDecryptedIsoAfterDecryption.UseVisualStyleBackColor = true;
@@ -217,7 +229,7 @@ partial class PS3Dec_GUI
         gbMultipleIsos.Controls.Add(tbDkeyDirectory);
         gbMultipleIsos.Controls.Add(label1);
         gbMultipleIsos.Enabled = false;
-        gbMultipleIsos.Location = new Point(19, 186);
+        gbMultipleIsos.Location = new Point(19, 184);
         gbMultipleIsos.Name = "gbMultipleIsos";
         gbMultipleIsos.Size = new Size(455, 100);
         gbMultipleIsos.TabIndex = 6;
@@ -230,7 +242,7 @@ partial class PS3Dec_GUI
         gbSingleIso.Controls.Add(label5);
         gbSingleIso.Controls.Add(tbEncryptedIsoFile);
         gbSingleIso.Controls.Add(tbDkeyFile);
-        gbSingleIso.Location = new Point(19, 72);
+        gbSingleIso.Location = new Point(19, 70);
         gbSingleIso.Name = "gbSingleIso";
         gbSingleIso.Size = new Size(455, 100);
         gbSingleIso.TabIndex = 7;
@@ -286,7 +298,7 @@ partial class PS3Dec_GUI
         // rbtnMultipleIsos
         // 
         rbtnMultipleIsos.AutoSize = true;
-        rbtnMultipleIsos.Location = new Point(162, 39);
+        rbtnMultipleIsos.Location = new Point(162, 37);
         rbtnMultipleIsos.Name = "rbtnMultipleIsos";
         rbtnMultipleIsos.Size = new Size(139, 19);
         rbtnMultipleIsos.TabIndex = 10;
@@ -297,7 +309,7 @@ partial class PS3Dec_GUI
         // 
         rbtnSingleIso.AutoSize = true;
         rbtnSingleIso.Checked = true;
-        rbtnSingleIso.Location = new Point(19, 39);
+        rbtnSingleIso.Location = new Point(19, 37);
         rbtnSingleIso.Name = "rbtnSingleIso";
         rbtnSingleIso.Size = new Size(121, 19);
         rbtnSingleIso.TabIndex = 11;
@@ -308,7 +320,7 @@ partial class PS3Dec_GUI
         // 
         // btnStart
         // 
-        btnStart.Location = new Point(19, 501);
+        btnStart.Location = new Point(19, 523);
         btnStart.Name = "btnStart";
         btnStart.Size = new Size(455, 47);
         btnStart.TabIndex = 12;
@@ -318,7 +330,7 @@ partial class PS3Dec_GUI
         // 
         // textBox1
         // 
-        textBox1.Location = new Point(52, 83);
+        textBox1.Location = new Point(52, 81);
         textBox1.Multiline = true;
         textBox1.Name = "textBox1";
         textBox1.Size = new Size(373, 476);
@@ -327,7 +339,7 @@ partial class PS3Dec_GUI
         // 
         // progressBar1
         // 
-        progressBar1.Location = new Point(19, 555);
+        progressBar1.Location = new Point(19, 577);
         progressBar1.Name = "progressBar1";
         progressBar1.Size = new Size(455, 16);
         progressBar1.TabIndex = 14;
@@ -335,7 +347,7 @@ partial class PS3Dec_GUI
         // statusStrip1
         // 
         statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-        statusStrip1.Location = new Point(0, 584);
+        statusStrip1.Location = new Point(0, 608);
         statusStrip1.Name = "statusStrip1";
         statusStrip1.Size = new Size(492, 22);
         statusStrip1.TabIndex = 15;
@@ -380,11 +392,11 @@ partial class PS3Dec_GUI
         supportMeWithPayPalToolStripMenuItem.Text = "Support me with PayPal";
         supportMeWithPayPalToolStripMenuItem.Click += supportMeWithPayPalToolStripMenuItem_Click;
         // 
-        // Form1
+        // PS3Dec_GUI
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(492, 606);
+        ClientSize = new Size(492, 630);
         Controls.Add(toolStrip1);
         Controls.Add(statusStrip1);
         Controls.Add(progressBar1);
@@ -402,7 +414,7 @@ partial class PS3Dec_GUI
         Controls.Add(textBox1);
         FormBorderStyle = FormBorderStyle.FixedSingle;
         MaximizeBox = false;
-        Name = "Form1";
+        Name = "PS3Dec_GUI";
         StartPosition = FormStartPosition.CenterScreen;
         Text = "PS3Dec GUI by pearlxcore";
         Load += Form1_Load;
@@ -452,4 +464,5 @@ partial class PS3Dec_GUI
     private ToolStripDropDownButton toolStripButton1;
     private ToolStripMenuItem buyMeCoffeeToolStripMenuItem;
     private ToolStripMenuItem supportMeWithPayPalToolStripMenuItem;
+    private CheckBox cbDeletePs3UpdateFolder;
 }

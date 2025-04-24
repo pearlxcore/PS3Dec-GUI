@@ -383,6 +383,7 @@ public partial class PS3Dec_GUI : Form
             bool deleteEncryptedIsoAfterDecrypt = cbDeleteEncryptedPs3IsoAfterDecrypt.Checked;
             bool deleteDecryptedIsoAfterExtract = cbDeleteDecryptedIsoAfterExtract.Checked;
             bool extractDecryptedIsoAfterDecryption = cbExtractDecryptedIsoAfterDecryption.Checked;
+            bool deletePs3UpdateFolder = cbDeletePs3UpdateFolder.Checked;
             int totalIso = isoList.Count;
             int index = 1;
             progressBar1.Maximum = totalIso;
@@ -423,7 +424,17 @@ public partial class PS3Dec_GUI : Form
                             await ExtractDecryptedIsoAfterDecryptionAsync(iso_, decryptionDirectory, extractIsoDirectory, deleteDecryptedIsoAfterExtract, index, totalIso);
                         }
 
+                        if (deletePs3UpdateFolder)
+                        {
 
+                            string ps3UpdateFolder = Path.Combine(Path.Combine($"{decryptionDirectory}\\{Path.GetFileNameWithoutExtension(iso_.FullName)} (decrypted)", "PS3_UPDATE"));
+                            string ps3UpdateFile = Path.Combine(ps3UpdateFolder, "PS3UPDAT.PUP");
+
+                            if (Directory.Exists(ps3UpdateFolder) && File.Exists(ps3UpdateFile))
+                            {
+                                Directory.Delete(ps3UpdateFolder, true);
+                            }
+                        }
                     }
                 }
                 index++;
