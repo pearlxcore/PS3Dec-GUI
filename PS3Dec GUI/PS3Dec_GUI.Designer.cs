@@ -1,6 +1,6 @@
 ﻿namespace PS3Dec_GUI;
 
-partial class Form1
+partial class PS3Dec_GUI
 {
     /// <summary>
     ///  Required designer variable.
@@ -28,7 +28,7 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PS3Dec_GUI));
         tbEncryptedPs3IsoDirectory = new TextBox();
         label1 = new Label();
         tbDkeyDirectory = new TextBox();

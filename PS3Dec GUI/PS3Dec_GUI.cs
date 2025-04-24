@@ -6,9 +6,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
 namespace PS3Dec_GUI;
 
-public partial class Form1 : Form
+public partial class PS3Dec_GUI : Form
 {
-    public Form1()
+    public PS3Dec_GUI()
     {
         InitializeComponent();
     }
